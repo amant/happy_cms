@@ -1,0 +1,35 @@
+module:
+ title: Content Management Module
+ creationDate: 12/12/2008
+ author: CodeArts
+ authorEmail: info@codeartsnepal.com
+ authorUrl: http://www.codeartsnepal.com
+ copyright: Copyright (C) 2008 CodeArts Nepal
+ license: Free
+ version: 2.1
+ description: >
+  Website Content Management Module
+ index:
+  - fieldsets: CONTENT
+     fieldset:
+      - title : Content List
+        href  : cms/display
+        icon  : icon-48-article.png
+      - title : Add New Content
+        href  : cms/add
+        icon  : icon-48-article-add.png
+      - title : Trash Manager
+        href  : cms/display_trash
+        icon  : icon-48-trash.png
+  - fieldsets: CONTENT TYPE
+     fieldset:
+      - title : Content Type List
+        href  : cms/cms_type/display
+        icon  : icon-48-category.png
+      - title : Add New Content Type
+        href  : cms/cms_type/add
+        icon  : icon-48-article-add.png
+ helps :
+  - title: Website Content Management Module
+   description: >
+    <p>Through this module you can manage the Content of the Website.</p> 

@@ -1,0 +1,27 @@
+module:
+ title: Cms_comment Module
+ creationDate: 10/03/2008
+ author: CodeArts
+ authorEmail: info@codeartsnepal.com
+ authorUrl: http://www.codeartsnepal.com
+ copyright: Copyright (C) 2008 CodeArts Nepal
+ license: Free
+ version: 2.1
+ description: >
+  Cms_comment Module
+ index:
+  - fieldsets: Cms_comment
+     fieldset:
+      - title : Cms_comment List
+        href  : cms_comment/display
+        icon  : icon-48-article.png
+      - title : Add New Cms_comment
+        href  : cms_comment/add
+        icon  : icon-48-article-add.png
+      - title : Trash Manager
+        href  : cms_comment/display_trash
+        icon  : icon-48-trash.png
+ helps :
+  - title: Cms_comment Management Module
+   description: >
+    <p>Through this module you can manage ...</p>

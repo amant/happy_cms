@@ -1,0 +1,1 @@
+<a href="#">Help</a> | <?php echo anchor('login/logout', '[ Logout ]') ?>

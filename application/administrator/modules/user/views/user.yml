@@ -1,0 +1,35 @@
+module:
+ title: User Management Module
+ creationDate: 12/12/2008
+ author: CodeArts
+ authorEmail: info@codeartsnepal.com
+ authorUrl: http://www.codeartsnepal.com
+ copyright: Copyright (C) 2008 CodeArts Nepal
+ license: free
+ version: 2.1
+ description: >
+  Welcome Index Page
+ index:
+  - fieldsets: USERS
+     fieldset:
+      - title : User List
+        href  : user/display
+        icon  : icon-48-article.png
+      - title : Add New User
+        href  : user/add
+        icon  : icon-48-article-add.png
+      - title : Trash Manager
+        href  : user/display_trash
+        icon  : icon-48-trash.png
+  - fieldsets: USER TYPE
+     fieldset:
+      - title : User Type List
+        href  : user/user_type/display
+        icon  : icon-48-category.png
+      - title : Add New User Type
+        href  : user/user_type/add
+        icon  : icon-48-article-add.png
+ helps :
+  - title: User Management Module
+   description: >
+    <p>Through this module you can manage the users of the Administrative Panel and Website</p>

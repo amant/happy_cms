@@ -1,0 +1,1 @@
+<div class="header icon-48-addedit"> <?php echo humanize(get_active_controller()); ?> - <?php echo humanize(get_active_function()); ?></div>

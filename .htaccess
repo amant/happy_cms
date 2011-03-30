@@ -1,0 +1,59 @@
+<IfModule mod_rewrite.c>
+   RewriteEngine On
+   #RewriteBase /
+
+   #Removes access to the system folder by users.
+   #Additionally this will allow you to create a System.php controller,
+   #previously this would not have been possible.
+   #'system' can be replaced if you have renamed your system folder.
+   RewriteCond %{REQUEST_URI} ^system.*
+   RewriteRule ^(.*)$ index.php/$1 [L]
+
+   #Checks to see if the user is attempting to access a valid file,
+   #such as an image or css document, if this isn't true it sends the
+   #request to index.php
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteRule ^(.*)$ index.php/$1 [L]    
+</IfModule>
+
+<IfModule mod_headers.c>
+	# 1 Week
+	<FilesMatch "\\.(ico|gif|jpg|jpeg|png|flv|pdf|js|css|swf)$">
+	  Header set Cache-Control "max-age=604800"
+	</FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+	ExpiresActive On
+	
+	ExpiresByType image/x-icon "access plus 1 month"
+	
+	# JavaScript has various MIME types
+	ExpiresByType application/x-javascript	"access plus 1 month"
+	ExpiresByType application/javascript	"access plus 1 month"
+	ExpiresByType text/ecmascript			"access plus 1 month"
+	ExpiresByType text/javascript			"access plus 1 month"
+	
+	# Texts
+	ExpiresByType text/css						"access plus 1 month"
+	ExpiresByType text/plain					"access plus 1 month"
+	ExpiresByType text/x-component				"access plus 1 month"
+	ExpiresByType text/xml						"access plus 1 month"
+	
+	# Images
+	ExpiresByType image/bmp						"access plus 10 years"
+	ExpiresByType image/gif						"access plus 10 years"
+	ExpiresByType image/jpeg					"access plus 10 years"
+	ExpiresByType image/png						"access plus 10 years"
+	ExpiresByType image/tiff					"access plus 10 years"
+	ExpiresByType image/vnd.microsoft.icon 		"access plus 10 years"
+</IfModule>
+
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript text/ecmascript application/x-javascript application/javascript
+	
+	<FilesMatch "\\.(js|css|html|htm|php|xml)$">
+	 SetOutputFilter DEFLATE
+	</FilesMatch>
+</IfModule>

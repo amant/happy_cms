@@ -1,0 +1,1 @@
+<?php echo render_partial('/ca_gridview') ?>

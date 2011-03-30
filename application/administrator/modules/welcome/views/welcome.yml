@@ -1,0 +1,36 @@
+module:
+ title: Welcome
+ description: >
+  Welcome To Italica-online administrator panel.
+ index:
+  - fieldsets: Articles
+     fieldset:
+      - title : Add Article
+        href  : cms/add
+        icon  : icon-48-article-add.png
+      - title : Article Manager
+        href  : cms/display
+        icon  : icon-48-article.png
+      - title : Article Type
+        href  : cms/cms_type/display
+        icon  : icon-48-category.png
+      - title : Trash
+        href  : cms/display_trash
+        icon  : icon-48-trash.png
+      - title : Comment Manager
+        href  : cms/cms_comment/display
+        icon  : icon-48-comment.png
+  - fieldsets: System
+     fieldset:
+      - title : Add User
+        href  : user/add
+        icon  : icon-48-user-group-add.png
+      - title : User Manager
+        href  : user/display
+        icon  : icon-48-user-group.png
+ helps :
+  - title: Help
+    description: >
+     <ul>
+     <li>Article. <p>Manage all your website contents.</p></li>
+     </ul>
