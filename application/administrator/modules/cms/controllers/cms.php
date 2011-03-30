@@ -155,7 +155,7 @@
 					'enable' => true,
 					'initialize' => array(
 						'base_url' => site_url('cms/display'),
-						'per_page' => 25,
+						'per_page' => 10,
 						'num_links' => 5
 					),
 					'order_field' => 'id',
@@ -305,7 +305,7 @@
 					'enable' => true,
 					'initialize' => array(
 						'base_url' => site_url('cms/display'),
-						'per_page' => 25,
+						'per_page' => 10,
 						'num_links' => 5
 					),
 					'order_field' => 'cms_type_id',
