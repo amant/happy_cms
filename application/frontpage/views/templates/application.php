@@ -38,6 +38,6 @@
 	<?php echo script('application.js'); ?>	
 </head>
 <body>	
-	<?php echo $this->ocular->yield() ?>		
+	<?php echo $this->ocular->yields() ?>		
 </body>
 </html>

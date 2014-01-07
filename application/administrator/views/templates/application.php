@@ -64,7 +64,7 @@
 				</div>
 			</div>
 
-			<?php echo $this->ocular->yield() ?>
+			<?php echo $this->ocular->yields() ?>
           </div>
         </div>
       </div>

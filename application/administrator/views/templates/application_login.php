@@ -29,7 +29,7 @@
 	    <div id="body">
 	      <div id="body_wrap">
 			<?php render_partial('/flash_notification') ?>
-	        <?php $this->ocular->yield() ?>
+	        <?php $this->ocular->yields() ?>
 		  </div>
 	    </div>
 	  </div>

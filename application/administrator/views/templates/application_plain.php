@@ -6,6 +6,6 @@
 	<?php echo favicon('favicon.png') ?>	    
 </head>
 <body>
-	<?php echo $this->ocular->yield() ?>
+	<?php echo $this->ocular->yields() ?>
 </body>
 </html>

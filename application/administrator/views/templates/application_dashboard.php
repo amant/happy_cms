@@ -44,7 +44,7 @@
         <div id="body">
           <div id="body_wrap">
             <?php echo render_partial('/flash_notification') ?>
-            <?php echo $this->ocular->yield() ?>        
+            <?php echo $this->ocular->yields() ?>        
           </div>
         </div>
       </div>

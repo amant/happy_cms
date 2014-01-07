@@ -1,6 +1,6 @@
 <?php
 
-	function hex2bin($hexString)
+	/*function hex2bin($hexString)
 	{
 			$hexLenght = strlen($hexString);
 			// only hex numbers is allowed
@@ -15,7 +15,7 @@
 			}
 
 			return $binString;
-	}
+	}*/
 	
 	function encode($word)
 	{
